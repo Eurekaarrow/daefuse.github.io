@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <style>
-  .video-box {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  }
-</style>
   
   <meta charset="utf-8">
   <meta name="description"
@@ -115,65 +106,80 @@
   </div>
 </section>
 
-<section class="section">
+<section class="hero teaser">
   <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- 实验1 -->
+      <div class="columns is-vcentered has-text-centered mb-6">
+        <div class="column">
+          <video controls class="video-frame" src="./static/videos/vis_1.mp4"></video>
+          <p class="label mt-2">Visual 1</p>
+        </div>
+        <div class="column">
+          <video controls class="video-frame" src="./static/videos/ir_1.mp4"></video>
+          <p class="label mt-2">Infrared 1</p>
+        </div>
+        <div class="column">
+          <video controls class="video-frame" src="./static/videos/fusion_1.mp4"></video>
+          <p class="label mt-2">Fusion 1</p>
+        </div>
+      </div>
 
-    <!-- Experiment 1 -->
-    <div class="columns is-vcentered">
-      <div class="column has-text-centered">
-        <video src="./static/videos/vis_1.mp4" class="video-box" autoplay muted loop></video>
+      <!-- 实验2 -->
+      <div class="columns is-vcentered has-text-centered mb-6">
+        <div class="column">
+          <video controls class="video-frame" src="./static/videos/vis_2.mp4"></video>
+          <p class="label mt-2">Visual 2</p>
+        </div>
+        <div class="column">
+          <video controls class="video-frame" src="./static/videos/ir_2.mp4"></video>
+          <p class="label mt-2">Infrared 2</p>
+        </div>
+        <div class="column">
+          <video controls class="video-frame" src="./static/videos/fusion_2.mp4"></video>
+          <p class="label mt-2">Fusion 2</p>
+        </div>
       </div>
-      <div class="column has-text-centered">
-        <video src="./static/videos/ir_1.mp4" class="video-box" autoplay muted loop></video>
-      </div>
-      <div class="column has-text-centered">
-        <video src="./static/videos/fusion_1.mp4" class="video-box" autoplay muted loop></video>
-      </div>
-    </div>
-    <div class="columns is-mobile has-text-centered mb-6">
-      <div class="column">Visual</div>
-      <div class="column">Infrared</div>
-      <div class="column">Fused</div>
-    </div>
 
-    <!-- Experiment 2 -->
-    <div class="columns is-vcentered">
-      <div class="column has-text-centered">
-        <video src="./static/videos/vis_2.mp4" class="video-box" autoplay muted loop></video>
+      <!-- 实验3 -->
+      <div class="columns is-vcentered has-text-centered">
+        <div class="column">
+          <video controls class="video-frame" src="./static/videos/vis_3.mp4"></video>
+          <p class="label mt-2">Visual 3</p>
+        </div>
+        <div class="column">
+          <video controls class="video-frame" src="./static/videos/ir_3.mp4"></video>
+          <p class="label mt-2">Infrared 3</p>
+        </div>
+        <div class="column">
+          <video controls class="video-frame" src="./static/videos/fusion_3.mp4"></video>
+          <p class="label mt-2">Fusion 3</p>
+        </div>
       </div>
-      <div class="column has-text-centered">
-        <video src="./static/videos/ir_2.mp4" class="video-box" autoplay muted loop></video>
-      </div>
-      <div class="column has-text-centered">
-        <video src="./static/videos/fusion_2.mp4" class="video-box" autoplay muted loop></video>
-      </div>
-    </div>
-    <div class="columns is-mobile has-text-centered mb-6">
-      <div class="column">Visual</div>
-      <div class="column">Infrared</div>
-      <div class="column">Fused</div>
-    </div>
 
-    <!-- Experiment 3 -->
-    <div class="columns is-vcentered">
-      <div class="column has-text-centered">
-        <video src="./static/videos/vis_3.mp4" class="video-box" autoplay muted loop></video>
-      </div>
-      <div class="column has-text-centered">
-        <video src="./static/videos/ir_3.mp4" class="video-box" autoplay muted loop></video>
-      </div>
-      <div class="column has-text-centered">
-        <video src="./static/videos/fusion_3.mp4" class="video-box" autoplay muted loop></video>
-      </div>
+      <h2 class="subtitle has-text-centered mt-5">
+        DAE-Fuse integrates adversarial feature extraction and cross-modality attention<br>
+        to achieve balanced multi-modality fusion.
+      </h2>
     </div>
-    <div class="columns is-mobile has-text-centered">
-      <div class="column">Visual</div>
-      <div class="column">Infrared</div>
-      <div class="column">Fused</div>
-    </div>
-
   </div>
 </section>
+
+<style>
+.video-frame {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+</style>
 
 
 <section class="section">
