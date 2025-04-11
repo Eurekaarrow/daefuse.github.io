@@ -1,14 +1,14 @@
-# Nerfies
+# DAE-Fuse
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository that contains source code for the [DAE-Fuse website](https://eurekaarrow.github.io/daefuse.github.io/).
 
-If you find Nerfies useful for your work please cite:
+If you find DAE-Fuse useful for your work please cite:
 ```
 @article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+  author    = {Guo, Yuchen and Xu, Ruoxiang and Li, Rongcheng and Su, Weifeng},
+  title     = {DAE-Fuse: An Adaptive Discriminative Autoencoder for Multi-Modality Image Fusion},
+  journal   = {ICME},
+  year      = {2025},
 }
 ```
 
