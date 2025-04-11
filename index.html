@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <style>
+  .video-box {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+</style>
+  
   <meta charset="utf-8">
   <meta name="description"
         content="DAE-Fuse: An Adaptive Discriminative Autoencoder for Multi-Modality Image Fusion">
@@ -72,15 +82,15 @@
             </span>
           </h1>
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><a href="https://eurekaarrow.github.io/">Yuchen Guo</a><sup></sup>,</span>
-            <span class="author-block"><a href="https://www.linkedin.com/in/ruoxiang-xu-3934a2335/">Ruoxiang Xu</a><sup></sup>,</span>
-            <span class="author-block"><a href="https://www.linkedin.com/in/rongcheng-li-8751152b6/">Rongcheng Li</a>,</span>
+            <span class="author-block"><a href="https://eurekaarrow.github.io/">Yuchen Guo</a><sup></sup>,</span></span>
+            <span class="author-block"><a href="https://www.linkedin.com/in/ruoxiang-xu-3934a2335/">Ruoxiang Xu</a><sup></sup>,</span></span>
+            <span class="author-block"><a href="https://www.linkedin.com/in/rongcheng-li-8751152b6/">Rongcheng Li</a>,</span></span>
             <span class="author-block"><a href="https://staff.uic.edu.cn/wfsu/en">Weifeng Su</a><sup></sup></span>
           </div>
           <div class="is-size-5 publication-authors">
             <span class="author-block"> Department of Computer Science </span>
             <span class="author-block"> Guangdong Provincial Key Laboratory of Interdisciplinary Research and Application for Data Science </span>
-            <span class="author-block"> Beijing Normal- Hong Kong Baptist University </span>
+            <span class="author-block"> Beijing Normal - Hong Kong Baptist University </span>
           </div>
 
           <div class="column has-text-centered">
@@ -105,16 +115,66 @@
   </div>
 </section>
 
-<section class="hero teaser">
+<section class="section">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="./static/images/teaser.png" alt="DAE-Fuse Framework" class="teaser-image">
-      <h2 class="subtitle has-text-centered">
-        DAE-Fuse integrates adversarial feature extraction and cross-modality attention to achieve balanced multi-modality fusion.
-      </h2>
+
+    <!-- Experiment 1 -->
+    <div class="columns is-vcentered">
+      <div class="column has-text-centered">
+        <video src="./static/videos/vis_1.mp4" class="video-box" autoplay muted loop></video>
+      </div>
+      <div class="column has-text-centered">
+        <video src="./static/videos/ir_1.mp4" class="video-box" autoplay muted loop></video>
+      </div>
+      <div class="column has-text-centered">
+        <video src="./static/videos/fusion_1.mp4" class="video-box" autoplay muted loop></video>
+      </div>
     </div>
+    <div class="columns is-mobile has-text-centered mb-6">
+      <div class="column">Visual</div>
+      <div class="column">Infrared</div>
+      <div class="column">Fused</div>
+    </div>
+
+    <!-- Experiment 2 -->
+    <div class="columns is-vcentered">
+      <div class="column has-text-centered">
+        <video src="./static/videos/vis_2.mp4" class="video-box" autoplay muted loop></video>
+      </div>
+      <div class="column has-text-centered">
+        <video src="./static/videos/ir_2.mp4" class="video-box" autoplay muted loop></video>
+      </div>
+      <div class="column has-text-centered">
+        <video src="./static/videos/fusion_2.mp4" class="video-box" autoplay muted loop></video>
+      </div>
+    </div>
+    <div class="columns is-mobile has-text-centered mb-6">
+      <div class="column">Visual</div>
+      <div class="column">Infrared</div>
+      <div class="column">Fused</div>
+    </div>
+
+    <!-- Experiment 3 -->
+    <div class="columns is-vcentered">
+      <div class="column has-text-centered">
+        <video src="./static/videos/vis_3.mp4" class="video-box" autoplay muted loop></video>
+      </div>
+      <div class="column has-text-centered">
+        <video src="./static/videos/ir_3.mp4" class="video-box" autoplay muted loop></video>
+      </div>
+      <div class="column has-text-centered">
+        <video src="./static/videos/fusion_3.mp4" class="video-box" autoplay muted loop></video>
+      </div>
+    </div>
+    <div class="columns is-mobile has-text-centered">
+      <div class="column">Visual</div>
+      <div class="column">Infrared</div>
+      <div class="column">Fused</div>
+    </div>
+
   </div>
 </section>
+
 
 <section class="section">
   <div class="container is-max-desktop">
