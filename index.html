@@ -114,15 +114,15 @@
       <!-- 实验 1 -->
       <div class="columns is-vcentered has-text-centered mb-6">
         <div class="column">
-          <video controls class="video-frame" src="./static/videos/vis1.mp4"></video>
+          <video controls class="video-frame" src="./static/videos/vis1.mp4" loading="lazy"></video>
           <p class="label mt-3">Visual 1</p>
         </div>
         <div class="column">
-          <video controls class="video-frame" src="./static/videos/ir1.mp4"></video>
+          <video controls class="video-frame" src="./static/videos/ir1.mp4" loading="lazy"></video>
           <p class="label mt-3">Infrared 1</p>
         </div>
         <div class="column">
-          <video controls class="video-frame" src="./static/videos/fusion1.mp4"></video>
+          <video controls class="video-frame" src="./static/videos/fusion1.mp4" loading="lazy"></video>
           <p class="label mt-3">Fusion 1</p>
         </div>
       </div>
@@ -130,15 +130,15 @@
       <!-- 实验 2 -->
       <div class="columns is-vcentered has-text-centered mb-6">
         <div class="column">
-          <video controls class="video-frame" src="./static/videos/vis2.mp4"></video>
+          <video controls class="video-frame" src="./static/videos/vis2.mp4" loading="lazy"></video>
           <p class="label mt-3">Visual 2</p>
         </div>
         <div class="column">
-          <video controls class="video-frame" src="./static/videos/ir2.mp4"></video>
+          <video controls class="video-frame" src="./static/videos/ir2.mp4" loading="lazy"></video>
           <p class="label mt-3">Infrared 2</p>
         </div>
         <div class="column">
-          <video controls class="video-frame" src="./static/videos/fusion2.mp4"></video>
+          <video controls class="video-frame" src="./static/videos/fusion2.mp4" loading="lazy"></video>
           <p class="label mt-3">Fusion 2</p>
         </div>
       </div>
@@ -146,22 +146,21 @@
       <!-- 实验 3 -->
       <div class="columns is-vcentered has-text-centered">
         <div class="column">
-          <video controls class="video-frame" src="./static/videos/vis3.mp4"></video>
+          <video controls class="video-frame" src="./static/videos/vis3.mp4" loading="lazy"></video>
           <p class="label mt-3">Visual 3</p>
         </div>
         <div class="column">
-          <video controls class="video-frame" src="./static/videos/ir3.mp4"></video>
+          <video controls class="video-frame" src="./static/videos/ir3.mp4" loading="lazy"></video>
           <p class="label mt-3">Infrared 3</p>
         </div>
         <div class="column">
-          <video controls class="video-frame" src="./static/videos/fusion3.mp4"></video>
+          <video controls class="video-frame" src="./static/videos/fusion3.mp4" loading="lazy"></video>
           <p class="label mt-3">Fusion 3</p>
         </div>
       </div>
 
       <h2 class="subtitle has-text-centered mt-6">
-        DAE-Fuse integrates adversarial feature extraction and cross-modality attention<br>
-        to achieve balanced multi-modality fusion.
+        Video Fusion Experimental Results of Our DAE-Fuse Method.
       </h2>
     </div>
   </div>
@@ -177,7 +176,7 @@
 /* 视频样式增强 */
 .video-frame {
   width: 100%;
-  max-width: 640px;  /* 桌面端放大尺寸 */
+  max-width: 740px;  /* 桌面端放大尺寸 */
   height: 360px;     /* 16:9 比例 */
   object-fit: cover;
   border-radius: 14px;
@@ -243,20 +242,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            In extreme scenarios such as nighttime or low-visibility environments, achieving reliable perception is critical for applications like autonomous driving. We propose DAE-Fuse, a novel two-phase discriminative autoencoder framework that generates sharp and natural fused images by combining adversarial learning with cross-modality attention. Our method pioneers the extension of image fusion to video domain while preserving temporal consistency. Extensive experiments show state-of-the-art performance on IVIF and medical fusion tasks.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Method -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Method</h2>
-        <div class="content has-text-justified">
-          <img src="./static/images/framework.png" alt="DAE-Fuse Architecture">
-          <p>
-            <b>Two-phase framework:</b> (1) Adversarial Feature Extraction Phase with Transformer-CNN parallel encoders. (2) Attention-Guided Cross-Modality Fusion Phase leveraging cross-attention and adversarial learning.
+            In extreme scenarios such as nighttime or low-visibility environments, achieving reliable perception is critical for applications like autonomous driving, robotics, and surveillance. Multi-modality image fusion, particularly integrating infrared imaging, offers a robust solution by combining complementary information from different modalities to enhance scene understanding and decision-making. However, current methods face significant limitations: GAN-based approaches often produce blurry images that lack fine-grained details, while AE-based methods may introduce bias toward specific modalities, leading to unnatural fusion results. To address these challenges, we propose DAE-Fuse, a novel two-phase discriminative autoencoder framework that generates sharp and natural fused images. Furthermore, We pioneer the extension of image fusion techniques from static images to the video domain while preserving temporal consistency across frames, thus advancing the perceptual capabilities required for autonomous navigation. Extensive experiments on public datasets demonstrate that DAE-Fuse achieves state-of-the-art performance on multiple benchmarks, with superior generalizability to tasks like medical image fusion.
           </p>
         </div>
       </div>
@@ -267,20 +253,11 @@
       <div class="column is-full-width">
         <h2 class="title is-3">Results</h2>
         <div class="content">
-          <h3 class="title is-4">Qualitative Comparison</h3>
-          <img src="./static/images/result_comparison.png" alt="Qualitative Results">
-          <p>
-            DAE-Fuse preserves fine details (e.g., roof texture) and avoids modality bias compared to GAN/AE baselines.
-          </p>
-
-          <h3 class="title is-4">Quantitative Comparison</h3>
-          <table class="table is-bordered">
-            <thead><tr><th>Method</th><th>EN↑</th><th>SD↑</th><th>VIF↑</th></tr></thead>
-            <tbody>
-              <tr><td>DIDFuse</td><td>6.97</td><td>45.12</td><td>0.60</td></tr>
-              <tr><td>Ours</td><td class="has-text-weight-bold">7.17</td><td class="has-text-weight-bold">46.63</td><td class="has-text-weight-bold">0.79</td></tr>
-            </tbody>
-          </table>
+          <h3 class="title is-4">Qualitative Comparison on Infrared-Visible Image Fusion (IVIF)</h3>
+          <img src="./static/videos/ivif_quali.pdf" alt="Qualitative Result1">
+          
+          <h3 class="title is-4">Qualitative Comparison on Medical Image Fusion (MIF)</h3>
+          <img src="./static/videos/mif.pdf" alt="Qualitative Result2">
         </div>
       </div>
     </div>
@@ -289,11 +266,11 @@
     <div class="columns is-centered">
       <div class="column is-full-width content">
         <h2 class="title">BibTeX</h2>
-        <pre><code>@article{guo2023dae-fuse,
+        <pre><code>@article{guo2024dae-fuse,
   title={DAE-Fuse: An Adaptive Discriminative Autoencoder for Multi-Modality Image Fusion},
   author={Guo, Yuchen and Xu, Ruoxiang and Li, Rongcheng and Su, Weifeng},
-  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
-  year={2023}
+  journal={arXiv preprint arXiv:2409.10080},
+  year={2024}
 }</code></pre>
       </div>
     </div>
@@ -303,7 +280,7 @@
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <p>This website is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
+      <p>Froked from <a href="https://github.com/nerfies/nerfies.github.io>Nerfies</a> </p>
     </div>
   </div>
 </footer>
