@@ -2,7 +2,7 @@
 
 ### 🎉🎉🎉 Accepted by ICME 2025 as Oral Presentation Paper 🎉🎉🎉
 
-Please refer to the video fusion result at the <a href="https://eurekaarrow.github.io/daefuse.github.io/" target="_blank">  Project Page </a>
+Please refer to the video fusion result at the Project Page.
 <div style="display: flex; gap: 20px; margin-top: 20px;">
 
   <!-- Project Page -->
