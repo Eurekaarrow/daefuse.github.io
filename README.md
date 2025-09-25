@@ -1,7 +1,4 @@
-# DAE-Fuse
-## An Adaptive Discriminative Autoencoder for Multi-Modality Image Fusion
-
-
+# DAE-Fuse: An Adaptive Discriminative Autoencoder for Multi-Modality Image Fusion
 
 ### 🎉🎉🎉 Accepted by ICME 2025 as Oral Presentation Paper 🎉🎉🎉
 
