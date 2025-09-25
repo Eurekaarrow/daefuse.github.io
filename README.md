@@ -1,6 +1,6 @@
 # DAE-Fuse
 
-🎉🎉🎉 Accepted by ICME 2025 as Oral Presentation Paper 🎉🎉🎉
+## 🎉🎉🎉 Accepted by ICME 2025 as Oral Presentation Paper 🎉🎉🎉
 
 
 <a href="https://eurekaarrow.github.io/daefuse.github.io/" target="_blank">
@@ -8,6 +8,7 @@
 </a>
 
 Abstract
+
 In extreme scenarios such as nighttime or low-visibility environments, achieving reliable perception is critical for applications like autonomous driving, robotics, and surveillance. Multi-modality image fusion, particularly integrating infrared imaging, offers a robust solution by combining complementary information from different modalities to enhance scene understanding and decision-making. However, current methods face significant limitations: GAN-based approaches often produce blurry images that lack fine-grained details, while AE-based methods may introduce bias toward specific modalities, leading to unnatural fusion results. To address these challenges, we propose DAE-Fuse, a novel two-phase discriminative autoencoder framework that generates sharp and natural fused images. Furthermore, We pioneer the extension of image fusion techniques from static images to the video domain while preserving temporal consistency across frames, thus advancing the perceptual capabilities required for autonomous navigation. Extensive experiments on public datasets demonstrate that DAE-Fuse achieves state-of-the-art performance on multiple benchmarks, with superior generalizability to tasks like medical image fusion.
 
 If you find DAE-Fuse useful for your work please cite:
