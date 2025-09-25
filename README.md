@@ -3,6 +3,19 @@
 ### 🎉🎉🎉 Accepted by ICME 2025 as Oral Presentation Paper 🎉🎉🎉
 
 Please refer to the video fusion result at the <a href="https://eurekaarrow.github.io/daefuse.github.io/" target="_blank">  Project Page </a>
+<div style="display: flex; gap: 20px; margin-top: 20px;">
+
+  <!-- Project Page -->
+  <a href="https://eurekaarrow.github.io/daefuse.github.io/" target="_blank">
+    <img src="https://img.shields.io/badge/Project-Page-blue?style=for-the-badge" alt="Project Page">
+  </a>
+
+  <!-- Paper -->
+  <a href="https://www.arxiv.org/pdf/2409.10080" target="_blank">
+    <img src="https://img.shields.io/badge/arXiv-Paper-B31B1B?style=for-the-badge&logo=arxiv" alt="arXiv Paper">
+  </a>
+
+</div>
 
 
 Abstract
