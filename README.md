@@ -1,6 +1,9 @@
 # DAE-Fuse
+## An Adaptive Discriminative Autoencoder for Multi-Modality Image Fusion
 
-## 🎉🎉🎉 Accepted by ICME 2025 as Oral Presentation Paper 🎉🎉🎉
+
+
+### 🎉🎉🎉 Accepted by ICME 2025 as Oral Presentation Paper 🎉🎉🎉
 
 Please refer to the video fusion result at the <a href="https://eurekaarrow.github.io/daefuse.github.io/" target="_blank">  Project Page </a>
 
