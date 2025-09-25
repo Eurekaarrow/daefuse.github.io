@@ -1,6 +1,10 @@
 # DAE-Fuse
 
-This is the repository that contains source code for the [DAE-Fuse website](https://eurekaarrow.github.io/daefuse.github.io/).
+🎉🎉🎉 Accepted by ICME 2025 as Oral Presentation Paper 🎉🎉🎉
+<a href="https://eurekaarrow.github.io/daefuse.github.io/" target="_blank">
+  Visit Project Page
+</a>
+
 
 If you find DAE-Fuse useful for your work please cite:
 ```
