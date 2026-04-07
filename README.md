@@ -28,11 +28,13 @@ In extreme scenarios such as nighttime or low-visibility environments, achieving
 
 If you find DAE-Fuse useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Guo, Yuchen and Xu, Ruoxiang and Li, Rongcheng and Su, Weifeng},
-  title     = {DAE-Fuse: An Adaptive Discriminative Autoencoder for Multi-Modality Image Fusion},
-  journal   = {ICME},
-  year      = {2025},
+@inproceedings{guo2025dae,
+  title={Dae-fuse: An adaptive discriminative autoencoder for multi-modality image fusion},
+  author={Guo, Yuchen and Xu, Ruoxiang and Li, Rongcheng and Su, Weifeng},
+  booktitle={2025 IEEE International Conference on Multimedia and Expo (ICME)},
+  pages={1--6},
+  year={2025},
+  organization={IEEE}
 }
 ```
 
